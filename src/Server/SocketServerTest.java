@@ -17,6 +17,7 @@ import java.net.Socket;
 
 
 public class SocketServerTest{
+	
 	public static final int PORT = 9999;
 	
 	public static void main(String[] args){
@@ -30,7 +31,7 @@ public class SocketServerTest{
 
 				String msg = in.readLine();
 				System.out.println("Clientからデータを受信しました");
-				//送信メッセージ作成
+				//送信メッセージ作成．Mathライブラリで2乗
 				msg = ("受け取った値は" + msg + "で，"
 						+ "2乗した値は" + (int)Math.pow(Integer.parseInt(msg), 2)
 						+ "です");
