@@ -27,6 +27,7 @@ public class SocketServerTest{
 				
 				try(BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 						PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())))){
+					System.out.println("setup with client:" + client);
 					String msg = in.readLine();
 					System.out.println("Clientからデータを受信しました");
 					
