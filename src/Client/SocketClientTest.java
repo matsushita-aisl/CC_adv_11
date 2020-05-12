@@ -31,7 +31,7 @@ public class SocketClientTest{
 			int num = (int)(Math.random()*10);
 			out.println(num);	//最後に改行がないとサーバで止まる
 			out.flush();	//これがないとサーバで止まる
-			System.out.println("Serverにデータを送信しました" + num);
+			System.out.println("Serverにデータを送信しました");
 			
 			String msg = in.readLine();
 			System.out.println("Serverからデータを受信しました\n"	 + msg);
